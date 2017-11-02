@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="UTF-8">
+    <meta name="description" content="Csikos Aniko Salon Dange Szeged Divat D'Ange D'ange Fashion Show FashionShow Hungary Salon Mode Style Vogue Robe Clothes Fiancée Bride Fiancee Designer Weddingdress Wedding Mariage BigDay Big Day Ruha Varrás Ruhavarrás Esküvő Készíttetés Készítés Tervezés Csipke Szoknya Fehér Muszlin Selyem Taft">
+    <meta name="keywords" content="Csikos Aniko Salon Dange Szeged Divat D'Ange D'ange Fashion Show FashionShow Hungary Salon Mode Style Vogue Robe Clothes Fiancée Bride Fiancee Designer Weddingdress Wedding Mariage BigDay Big Day Ruha Varrás Ruhavarrás Esküvő Készíttetés Készítés Tervezés Csipke Szoknya Fehér Muszlin Selyem Taft">
+    <meta name="author" content="Csikós Anikó">
+    <title>Salon D'Ange</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <!--<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" href="css/dange-bootstrap.css">
+    <link rel="stylesheet" href="css/dange-all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+
+    <script src="js/changepage.js"></script>
+</head>
+<body onload="loadPage();">
+
+<div class="loaderBackground">
+    <div class="row">
+        <div class="col-md-3 col-lg-3"></div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <img src="develope/homepage/Dangelogo.png" style="text-align: center; width: 100%"/>
+        </div>
+        <div class="col-md-3 col-lg-3"></div>
+    </div>
+    <div class="loader"></div>
+</div>
+
+<div class="main-header">
+    <nav class="navbar navbar-default navbar-fixed-top" id="all-navbar">
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4"></div>
+                        <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
+                            <div class="main-logo" style="position: absolute">
+                                <a href="#base" class="navbar-brand active" onclick="changePage('base')">D'ANGE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#base" class="navbar-brand active" onclick="changePage('base')">D'ANGE</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <p lang="hu">GALÉRIA <span class="caret"></span></p>
+                                    <p lang="en">GALLERY <span class="caret"></span></p>
+                                    <p lang="fr">GALERIE <span class="caret"></span></p>
+                                </a>
+                                <!-- MARK: Ez a dropdown bővül a betöltődéskor a mappaszerkezetnek megfelelően -->
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p lang="hu">VIDEÓ</p>
+                                    <p lang="en">VIDEO</p>
+                                    <p lang="fr">VIDÉO</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="changePage('contact')">
+                                    <p lang="hu">KAPCSOLAT</p>
+                                    <p lang="en">CONTACT</p>
+                                    <p lang="fr">CONTACT</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <p lang="hu">NYELV<span class="caret"></span></p>
+                                    <p lang="en">LANGUAGE<span class="caret"></span></p>
+                                    <p lang="fr">LANGUE<span class="caret"></span></p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="btnHU" href="#" onclick="switchLanguageTo('hu')">MAGYAR</a></li>
+                                    <li><a class="btnEN" href="#" onclick="switchLanguageTo('en')">ENGLISH</a></li>
+                                    <li><a class="btnFR" href="#" onclick="switchLanguageTo('fr')">FRANCE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="main-content">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1"></div>
+        <div class="col-xs-8 col-sm-8 col-md-10 col-lg-10">
+            <div class="content">
+                <section id="base">
+                    <div class="row" style="padding-top: 40px">
+                        <div class="col-md-1 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <img src="image-content/Aniko.jpg"/>
+                        </div>
+                        <div class="col-md-2 col-lg-2"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <p class="maintext" lang="hu" style="text-align: justify; font-size: larger">A <span style="font-weight: bold">D’Ange by Csikós Anikó</span> márkanév mögött valójában ketten állunk a lányommal. Ahogyan a nevünk is, a gondolkodásmódunk is megegyezik, így tudunk Magyarországon egyedülálló módon fejlődni.
+                                A D’Ange védjegye a ruhák ízléses egyszerűségében és rafinériájában rejlő összhangban elevenedik meg. Kollekcióink a kifinomult nő lendületes életéhez igazodnak, magukban hordozva azt az időtlen eleganciát, amely hosszú évek óta az ’haute couture’ lelke.
+                                <br><br>Hiszünk abban a szemléletben, hogy ruháinkat nem hordják, hanem viselik. Hiszen, a ruha nem pusztán a ruha öltözteti viselőjét, de a hölgyek megjelenése sugározza azt a megfoghatatlan harmóniát és tekintélyt, amit a kreáció nyújt. Így varázsolja a D’Ange a hétköznapot is alkalommá.
+                            </p>
+                            <p class="maintext" lang="en" style="text-align: justify; font-size: larger">As a matter of fact, behind the brand <span style="font-weight: bold">‘D’Ange by Csikós Anikó’</span> we stand together with my daughter. As we share our names, we share our way of thinking which helps us the develop quite uniquely in Hungary.
+                                The individuality of D’Ange lies in the correspondence of the stylish simplicity and trickiness of the clothes we make. Our collections go by the lively women, revealing the timeless elegancy which is the soul of the ‘haute couture’ from the beginnings.
+                                <br><br>We believe that our clothes are not only used but worn. A dress not only covers its owner but it represents a measureless harmony and prestige for women. This is how D’Ange makes the ordinary unordinary.
+                            </p>
+                            <p class="maintext" lang="fr" style="text-align: justify; font-size: larger">As a matter of fact, behind the brand <span style="font-weight: bold">‘D’Ange by Csikós Anikó’</span> we stand together with my daughter. As we share our names, we share our way of thinking which helps us the develop quite uniquely in Hungary.
+                                The individuality of D’Ange lies in the correspondence of the stylish simplicity and trickiness of the clothes we make. Our collections go by the lively women, revealing the timeless elegancy which is the soul of the ‘haute couture’ from the beginnings.
+                                <br><br>We believe that our clothes are not only used but worn. A dress not only covers its owner but it represents a measureless harmony and prestige for women. This is how D’Ange makes the ordinary unordinary.
+                            </p>
+                            <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <img src="develope/homepage/Dangelogo.png" style="text-align: center; width: 100%; margin-left: 10px; margin-right: 10px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="image-content"></div>
+                <section id="contact">
+                    <h2 style="text-align: center">
+                        <p lang="hu">KAPCSOLAT</p>
+                        <p lang="en">CONTACT</p>
+                        <p lang="fr">CONTACT</p>
+                    </h2>
+                    <div class="row" style="padding-top: 5%">
+                        <div class="col-md-2 col-lg-2"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="contact-list">
+                                <ul class="contact-ul">
+                                    <p lang="hu">
+                                        <i class="icon">&#xe80d;</i>
+                                        D'ANGE by Csikós Anikó
+                                    </p>
+                                    <p lang="en">
+                                        <i class="icon">&#xe80d;</i>
+                                        D'ANGE by Anikó Csikós
+                                    </p>
+                                    <p lang="fr">
+                                        <i class="icon">&#xe80d;</i>
+                                        D'ANGE by Anikó Csikós
+                                    </p>
+                                </ul>
+
+                                <ul class="contact-ul">
+                                    <p lang="hu">
+                                        <i class="icon">&#xe7f7;</i>
+                                        +36 30 262 49877
+                                    </p>
+                                    <p lang="en">
+                                        <i class="icon">&#xe7f7;</i>
+                                        +36 30 262 49877
+                                    </p>
+                                    <p lang="fr">
+                                        <i class="icon">&#xe7f7;</i>
+                                        +36 30 262 49877
+                                    </p>
+                                </ul>
+
+                                <ul class="contact-ul">
+                                    <p lang="hu">
+                                        <i class="icon">&#xe7dc;</i>
+                                        <a href="mailto:info@salondange.com" target="_top">info@salondange.com</a>
+                                    </p>
+                                    <p lang="en">
+                                        <i class="icon">&#xe7dc;</i>
+                                        <a href="mailto:info@salondange.com" target="_top">info@salondange.com</a>
+                                    </p>
+                                    <p lang="fr">
+                                        <i class="icon">&#xe7dc;</i>
+                                        <a href="mailto:info@salondange.com" target="_top">info@salondange.com</a>
+                                    </p>
+                                </ul>
+
+                                <ul class="contact-ul">
+                                    <p lang="hu">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Szeged,+Horv%C3%A1th+Mih%C3%A1ly+u.+7,+6720/@46.2552287,20.1486251,17z/data=!3m1!4b1!4m5!3m4!1s0x47448872be219541:0x475a3818ab7141c2!8m2!3d46.255225!4d20.1508138" target="_blank">
+                                            Szeged, Horváth Mihály u. 7, 6720
+                                        </a>
+                                    </p>
+                                    <p lang="en">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Szeged,+Horv%C3%A1th+Mih%C3%A1ly+u.+7,+6720/@46.2552287,20.1486251,17z/data=!3m1!4b1!4m5!3m4!1s0x47448872be219541:0x475a3818ab7141c2!8m2!3d46.255225!4d20.1508138" target="_blank">
+                                            7, Horváth Mihály street, 6720 Szeged (Hungary)
+                                        </a>
+                                    </p>
+                                    <p lang="fr">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Szeged,+Horv%C3%A1th+Mih%C3%A1ly+u.+7,+6720/@46.2552287,20.1486251,17z/data=!3m1!4b1!4m5!3m4!1s0x47448872be219541:0x475a3818ab7141c2!8m2!3d46.255225!4d20.1508138" target="_blank">
+                                            7, Horváth Mihály street, 6720 Szeged (Hungary)
+                                        </a>
+                                    </p>
+                                </ul>
+                                <ul class="contact-ul">
+                                    <p lang="hu">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Budapest,+Doh%C3%A1ny+u.+20,+1074/@47.4954617,19.0602327,17z/data=!3m1!4b1!4m5!3m4!1s0x4741dc42c4729e29:0xf7411a503b5362b3!8m2!3d47.4954617!4d19.0624214" target="_blank">
+                                            Budapest, 7.ker Dohány u. 20, 1074
+                                        </a>
+                                    </p>
+                                    <p lang="en">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Budapest,+Doh%C3%A1ny+u.+20,+1074/@47.4954617,19.0602327,17z/data=!3m1!4b1!4m5!3m4!1s0x4741dc42c4729e29:0xf7411a503b5362b3!8m2!3d47.4954617!4d19.0624214" target="_blank">
+                                            20, Dohány street, 1074 Budapest (Hungary)
+                                        </a>
+                                    </p>
+                                    <p lang="fr">
+                                        <i class="icon">&#xe788;</i>
+                                        <a href="https://www.google.hu/maps/place/Budapest,+Doh%C3%A1ny+u.+20,+1074/@47.4954617,19.0602327,17z/data=!3m1!4b1!4m5!3m4!1s0x4741dc42c4729e29:0xf7411a503b5362b3!8m2!3d47.4954617!4d19.0624214" target="_blank">
+                                            20, Dohány street, 1074 Budapest (Hungary)
+                                        </a>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.748619554585!2d20.14862511558417!3d46.25522497911828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47448872be3c4c97%3A0x8e15be4f6f2a6540!2sD&#39;Ange+-+Csik%C3%B3s+Anik%C3%B3!5e0!3m2!1shu!2shu!4v1490187369849" frameborder="0" style="border:0; width: 100%; height: 250px; padding-left: 5px; padding-right: 5px" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="main-footer">
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-5 col-lg-5"></div>
+        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+            <div class="footer-content">
+                <div class="follow-us">
+                    <p lang="hu">KÖVESSEN MINKET</p>
+                    <p lang="en">FOLLOW US</p>
+                    <p lang="fr">FOLLOW US</p>
+                </div>
+                <div class="social-icons">
+                    <div class="social-fb">
+                        <a href="https://www.facebook.com/dange.csikosaniko/" class="fa fa-facebook" target="_blank"></a>
+                    </div>
+                    <div class="social-in">
+                        <a href="https://www.instagram.com/dange_csikos_aniko/" target="_blank" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="social-gm">
+                        <a href="https://www.google.hu/maps/place/Szeged,+Horv%C3%A1th+Mih%C3%A1ly+u.+7,+6720/@46.2552287,20.1486251,17z/data=!3m1!4b1!4m5!3m4!1s0x47448872be219541:0x475a3818ab7141c2!8m2!3d46.255225!4d20.1508138"
+                           target="_blank" class="fa fa-google">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!--Modal 3-->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="prev-image" id="prev-image">
+        <i class="icon" id="modal-prev-image">&#xe6eb;</i>
+    </div>
+    <div class="modal-image" id="modal-image" onkeydown="swipeImage();">
+        <img class="modal-content" id="img01">
+    </div>
+    <div class="next-image" id="next-image">
+        <i class="icon" id="modal-next-image">&#xe6ec;</i>
+    </div>
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="caption"></div>
+</div>
+</body>
+</html>
